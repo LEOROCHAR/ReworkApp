@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block title %}Nueva Solicitud{% endblock %}
+
+{% block content %}    
+    <body class="bg-white">
+    <header>
+        <div class="container text-center">
+            <h1 class="fw-light"><strong>Sistema de Solicitudes de Reproceso</strong></h1>
+        </div>
+    </header>
+    </body>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="location" class="form-label"><strong>Location/Ubicacion:</strong></label><br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="location" value="Planta 1" class="form-check-input">
+                <label class="form-check-label">51St</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" name="location" value="Planta 2" class="form-check-input">
+                <label class="form-check-label">Chase</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="area" class="form-label"><strong>Request Area / Area que solicita</strong></label>
+                <select name="area" class="form-select">
+                    <option value="Building">Building</option>
+                    <option value="Welding">Welding</option>
+                    <option value="Front end">Front end</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Finish">Finish</option>
+                    <option value="High Bay">High Bay</option>
+                    <option value="Silencer">Silencer</option>
+                    <option value="Industrial Engineering">Industrial Engineering</option>
+                    <option value="Parts Order">Parts Order</option>
+                </select>
+            </div>
+        
+            <div class="col-md-4 mb-3">
+                <label for="solicitado_por" class="form-label"><strong>Request By:</strong></label>
+                <input type="text" name="solicitado_por" class="form-control">
+            </div>
+        
+            <div class="col-md-4 mb-3">
+                <label for="numero_trabajo" class="form-label"><strong>Job Number:</strong></label>
+                <input type="text" name="numero_trabajo" class="form-control">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="reason_rework" class="form-label"><strong>Reason For Rework:</strong></label><br>
+            <div class="checkbox-container">
+                <div class="grid-item checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="drawn_incorrectly" name="reason_rework" value="Drawn Incorrectly">
+                        <label for="drawn_incorrectly">Drawn Incorrectly (Dibujado incorrectamente)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="design_change" name="reason_rework" value="Design Change">
+                        <label for="design_change">Design Change (Cambio de Diseño)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="missing_lost" name="reason_rework" value="Missing/Lost">
+                        <label for="missing_lost">Missing/Lost (Parte Extraviada)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="missing_nesting" name="reason_rework" value="Missing Nesting">
+                        <label for="missing_nesting">Missing Nesting (Parte No Elaborada en Nesting)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="laser_issue" name="reason_rework" value="Laser Issue">
+                        <label for="laser_issue">Laser Issue (Problemas en Corte)</label>
+                    </div>
+                </div>
+                <div class="grid-item checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="bent_wrong" name="reason_rework" value="Bent Wrong">
+                        <label for="bent_wrong">Bent Wrong (Problemas en Doblaje)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="welded_wrong" name="reason_rework" value="Welded Wrong">
+                        <label for="welded_wrong">Welded Wrong (Problemas en Soldadura)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="engineer_jobs" name="reason_rework" value="Engineer jobs - Parts Order">
+                        <label for="engineer_jobs">Engineer jobs - Parts Order (Trabajo Ingenieros - Partes Especiales)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="damage" name="reason_rework" value="Damage">
+                        <label for="damage">Damage (Pieza Dañada)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="other_reason" name="reason_rework" value="Other">
+                        <label for="other_reason">Other:</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><strong>Detalles de partes:</strong></label><br>
+            <div id="detalles-partes">
+                <div class="row parte-detalle">
+                    <div class="col-md-3">
+                        <label><strong>Material:</strong></label>
+                        <select name="material" class="form-select">
+                            <option value="Acero">Acero</option>
+                            <option value="Aluminio">Aluminio</option>
+                            <option value="Cobre">Cobre</option>
+                            <option value="Plastico">Plastico</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label><strong>Calibre:</strong></label>
+                        <select name="calibre" class="form-select">
+                            <option value="12">12</option>
+                            <option value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label><strong>Cantidad:</strong></label> <input type="number" name="cantidad" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label><strong>Descripción:</strong></label> <input type="text" name="descripcion" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="agregar-parte" class="btn btn-secondary mt-2">Agregar parte</button>
+        </div>
+
+        <div class="mb-3">
+            <label for="documentos" class="form-label">Documentos:</label><br>
+            <input type="file" name="documentos" multiple class="form-control">
+        </div>
+
+        <input type="hidden" name="usuario_radicacion" value="admin">
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+    <script>
+        document.getElementById('agregar-parte').addEventListener('click', function() {
+            const detallesPartes = document.getElementById('detalles-partes');
+            const nuevaParte = document.createElement('div');
+            nuevaParte.classList.add('row', 'parte-detalle');
+            nuevaParte.innerHTML = `
+                <div class="col-md-3">
+                    <label>Material:</label>
+                    <select name="material" class="form-select">
+                        <option value="Acero">Acero</option>
+                        <option value="Aluminio">Aluminio</option>
+                        <option value="Cobre">Cobre</option>
+                        <option value="Plastico">Plastico</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label>Calibre:</label>
+                    <select name="calibre" class="form-select">
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label>Cantidad:</label> <input type="number" name="cantidad" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label>Descripción:</label> <input type="text" name="descripcion" class="form-control">
+                </div>
+            `;
+            detallesPartes.appendChild(nuevaParte);
+        });
+    </script>
+{% endblock %}

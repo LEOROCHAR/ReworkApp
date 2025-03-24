@@ -1,0 +1,283 @@
+[
+    {
+        "solicitud_id": 1,
+        "location": [
+            "Planta 1",
+            "Planta 2"
+        ],
+        "area": "Corte",
+        "solicitado_por": "usuario123",
+        "fecha_solicitud": "2024-10-27T10:00:00",
+        "numero_trabajo": "TRAB-001",
+        "razon_reproceso": [
+            "Error de medida",
+            "Error de material"
+        ],
+        "detalles_partes": [
+            {
+                "material": "Acero",
+                "calibre": "16",
+                "cantidad": 10,
+                "Descripcion": "Placas de acero para corte"
+            },
+            {
+                "material": "Aluminio",
+                "calibre": "18",
+                "cantidad": 5,
+                "Descripcion": "Placas de acero para corte2"
+            }
+        ],
+        "estatus_radicacion": "Done",
+        "usuario_radicacion": "admin",
+        "fecha_radicacion": "2024-10-27T10:30:00",
+        "estatus_nest": "Done",
+        "usuario_nest": "usuario_nest",
+        "fecha_nest": "2025-03-24T17:57:33.280244",
+        "documentos_nest": [
+            "nest1.pdf",
+            "nest2.pdf",
+            "1_nest_03-20-2025-ENGR3.PDF"
+        ],
+        "estatus_corte": "In progress",
+        "usuario_corte": "usuario_corte",
+        "fecha_corte": "2025-03-24T08:46:54.707746",
+        "estatus_doblez": "Done",
+        "usuario_doblez": "usuario_doblez",
+        "fecha_doblez": "2025-03-11T17:47:32.978435",
+        "estatus_finalizado": "Done",
+        "usuario_finalizado": "usuario_finalizado",
+        "fecha_finalizado": "2025-03-24T06:55:00.749665"
+    },
+    {
+        "solicitud_id": 2,
+        "location": [
+            "Planta 2"
+        ],
+        "area": "Front end",
+        "solicitado_por": "sd",
+        "fecha_solicitud": "2025-03-22T10:18:56.839209",
+        "numero_trabajo": "sdvfsd",
+        "razon_reproceso": [
+            "Missing Nesting"
+        ],
+        "detalles_partes": [
+            {
+                "material": "Acero",
+                "calibre": "12",
+                "cantidad": 10,
+                "descripcion": "2"
+            }
+        ],
+        "estatus_radicacion": "In progress",
+        "usuario_radicacion": "admin",
+        "fecha_radicacion": "2025-03-22T10:18:56.839209",
+        "estatus_nest": null,
+        "usuario_nest": null,
+        "fecha_nest": null,
+        "documentos_nest": [],
+        "estatus_corte": null,
+        "usuario_corte": null,
+        "fecha_corte": null,
+        "estatus_doblez": null,
+        "usuario_doblez": null,
+        "fecha_doblez": null,
+        "estatus_finalizado": null,
+        "usuario_finalizado": null,
+        "fecha_finalizado": null
+    },
+    {
+        "solicitud_id": 3,
+        "location": [],
+        "area": "Front end",
+        "solicitado_por": "zxz",
+        "fecha_solicitud": "2025-03-22T10:19:12.618908",
+        "numero_trabajo": "zxvcz",
+        "razon_reproceso": [
+            "Laser Issue"
+        ],
+        "detalles_partes": [
+            {
+                "material": "Acero",
+                "calibre": "12",
+                "cantidad": 512,
+                "descripcion": "l"
+            }
+        ],
+        "estatus_radicacion": "In progress",
+        "usuario_radicacion": "admin",
+        "fecha_radicacion": "2025-03-22T10:19:12.618908",
+        "estatus_nest": null,
+        "usuario_nest": null,
+        "fecha_nest": null,
+        "documentos_nest": [],
+        "estatus_corte": null,
+        "usuario_corte": null,
+        "fecha_corte": null,
+        "estatus_doblez": null,
+        "usuario_doblez": null,
+        "fecha_doblez": null,
+        "estatus_finalizado": null,
+        "usuario_finalizado": null,
+        "fecha_finalizado": null
+    },
+    {
+        "solicitud_id": 4,
+        "location": [],
+        "area": "Building",
+        "solicitado_por": "Leonardo Rocha",
+        "fecha_solicitud": "2025-03-22T10:19:54.103759",
+        "numero_trabajo": "39336",
+        "razon_reproceso": [
+            "Missing/Lost"
+        ],
+        "detalles_partes": [
+            {
+                "material": "Acero",
+                "calibre": "12",
+                "cantidad": 10,
+                "descripcion": "h"
+            }
+        ],
+        "estatus_radicacion": "In progress",
+        "usuario_radicacion": "admin",
+        "fecha_radicacion": "2025-03-22T10:19:54.103759",
+        "estatus_nest": "Done",
+        "usuario_nest": "usuario_nest",
+        "fecha_nest": "2025-03-24T06:55:38.516825",
+        "documentos_nest": [],
+        "estatus_corte": "Done",
+        "usuario_corte": "usuario_corte",
+        "fecha_corte": "2025-03-24T06:55:45.009316",
+        "estatus_doblez": "Done",
+        "usuario_doblez": "usuario_doblez",
+        "fecha_doblez": "2025-03-24T06:55:52.991274",
+        "estatus_finalizado": "Done",
+        "usuario_finalizado": "usuario_finalizado",
+        "fecha_finalizado": "2025-03-24T06:56:00.782730"
+    },
+    {
+        "solicitud_id": 5,
+        "location": [
+            "Planta 2"
+        ],
+        "area": "Front end",
+        "solicitado_por": "Julio",
+        "fecha_solicitud": "2025-03-22T10:28:16.520420",
+        "numero_trabajo": "35666",
+        "razon_reproceso": [
+            "Missing Nesting"
+        ],
+        "detalles_partes": [
+            {
+                "material": "Acero",
+                "calibre": "12",
+                "cantidad": 10,
+                "descripcion": "corner panel 3"
+            }
+        ],
+        "estatus_radicacion": "In progress",
+        "usuario_radicacion": "admin",
+        "fecha_radicacion": "2025-03-22T10:28:16.520420",
+        "estatus_nest": null,
+        "usuario_nest": null,
+        "fecha_nest": null,
+        "documentos_nest": [],
+        "estatus_corte": null,
+        "usuario_corte": null,
+        "fecha_corte": null,
+        "estatus_doblez": null,
+        "usuario_doblez": null,
+        "fecha_doblez": null,
+        "estatus_finalizado": null,
+        "usuario_finalizado": null,
+        "fecha_finalizado": null
+    },
+    {
+        "solicitud_id": 6,
+        "location": [
+            "Planta 1"
+        ],
+        "area": "Finish",
+        "solicitado_por": "steven",
+        "fecha_solicitud": "2025-03-24T14:45:17.491055",
+        "numero_trabajo": "140293",
+        "razon_reproceso": [
+            "Missing/Lost"
+        ],
+        "detalles_partes": [
+            {
+                "material": "Acero",
+                "calibre": "12",
+                "cantidad": 10,
+                "descripcion": "punch screen"
+            },
+            {
+                "material": "Aluminio",
+                "calibre": "14",
+                "cantidad": 50,
+                "descripcion": "door croce brce"
+            },
+            {
+                "material": "Cobre",
+                "calibre": "16",
+                "cantidad": 60,
+                "descripcion": "rain hood"
+            }
+        ],
+        "estatus_radicacion": "In progress",
+        "usuario_radicacion": "admin",
+        "fecha_radicacion": "2025-03-24T14:45:17.491055",
+        "estatus_nest": "Done",
+        "usuario_nest": "usuario_nest",
+        "fecha_nest": "2025-03-24T14:48:33.138991",
+        "documentos_nest": [
+            "6_nest_03-24-2025-RWRK3.PDF"
+        ],
+        "estatus_corte": null,
+        "usuario_corte": null,
+        "fecha_corte": null,
+        "estatus_doblez": null,
+        "usuario_doblez": null,
+        "fecha_doblez": null,
+        "estatus_finalizado": null,
+        "usuario_finalizado": null,
+        "fecha_finalizado": null
+    },
+    {
+        "solicitud_id": 7,
+        "location": [
+            "Planta 2"
+        ],
+        "area": "Front end",
+        "solicitado_por": "sebastian",
+        "fecha_solicitud": "2025-03-24T16:31:40.660694",
+        "numero_trabajo": "38300",
+        "razon_reproceso": [],
+        "detalles_partes": [
+            {
+                "material": "Aluminio",
+                "calibre": "12",
+                "cantidad": 50,
+                "descripcion": "231 pates"
+            }
+        ],
+        "estatus_radicacion": "In progress",
+        "usuario_radicacion": "admin",
+        "fecha_radicacion": "2025-03-24T16:31:40.660694",
+        "estatus_nest": "Done",
+        "usuario_nest": "usuario_nest",
+        "fecha_nest": "2025-03-24T16:32:06.664817",
+        "documentos_nest": [
+            "7_nest_03-24-2025-ENGR.PDF"
+        ],
+        "estatus_corte": null,
+        "usuario_corte": null,
+        "fecha_corte": null,
+        "estatus_doblez": null,
+        "usuario_doblez": null,
+        "fecha_doblez": null,
+        "estatus_finalizado": null,
+        "usuario_finalizado": null,
+        "fecha_finalizado": null
+    }
+]
