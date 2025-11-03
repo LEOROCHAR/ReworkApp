@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nova Consultores | Impulsamos tu crecimiento</title>
+    <meta name="description" content="Consultora estrat?gica que impulsa la transformaci?n digital y el crecimiento sostenible de tu empresa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-oesqE+LDJ9agEXkNtaf2J8mElFo7Jgw3KwDdc8dx2prvkAbR4BfvGn78wksBbXWn" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+</head>
+<body>
+    <header class="hero position-relative overflow-hidden">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#inicio">Nova Consultores</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#metodologia">Metodolog?a</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#casos">Casos de ?xito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary btn-sm text-white ms-lg-2" href="#contacto">Agenda una reuni?n</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container position-relative" id="inicio">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="badge rounded-pill text-bg-light text-primary-emphasis mb-3">Consultor?a estrat?gica</span>
+                    <h1 class="display-4 fw-bold mb-3">Transformamos tu visi?n en resultados sostenibles</h1>
+                    <p class="lead text-light opacity-75 mb-4">Acompa?amos a organizaciones de alto crecimiento en su proceso de transformaci?n digital, optimizaci?n operativa y expansi?n internacional.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="#contacto" class="btn btn-primary btn-lg">Solicita un diagn?stico gratuito</a>
+                        <a href="#casos" class="btn btn-outline-light btn-lg">Ver casos de ?xito</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-card p-4 p-lg-5 rounded-4 bg-white shadow-lg">
+                        <h2 class="h4 fw-semibold mb-4">?Listo para el siguiente nivel?</h2>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-start">
+                                <div class="icon-circle me-3"><i class="bi bi-rocket-takeoff"></i></div>
+                                <div>
+                                    <h3 class="h6 mb-1">Crecimiento acelerado</h3>
+                                    <p class="mb-0 text-body-secondary">Planes de expansi?n basados en datos con impacto medible en 90 d?as.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <div class="icon-circle me-3"><i class="bi bi-cpu"></i></div>
+                                <div>
+                                    <h3 class="h6 mb-1">Transformaci?n digital</h3>
+                                    <p class="mb-0 text-body-secondary">Implementaci?n end-to-end de tecnolog?a para automatizar procesos clave.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <div class="icon-circle me-3"><i class="bi bi-graph-up-arrow"></i></div>
+                                <div>
+                                    <h3 class="h6 mb-1">Optimizaci?n operativa</h3>
+                                    <p class="mb-0 text-body-secondary">Diagn?stico integral y redise?o de operaciones para escalar con eficiencia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </header>
+
+    <main>
+        <section class="section-metricas py-5 bg-body">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+                    <div class="col">
+                        <div class="metric-card p-4">
+                            <h3 class="display-6 fw-bold text-primary mb-1">+120</h3>
+                            <p class="mb-0 text-body-secondary">Proyectos transformacionales completados</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="metric-card p-4">
+                            <h3 class="display-6 fw-bold text-primary mb-1">32%</h3>
+                            <p class="mb-0 text-body-secondary">Promedio de mejora en EBITDA de nuestros clientes</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="metric-card p-4">
+                            <h3 class="display-6 fw-bold text-primary mb-1">15 pa?ses</h3>
+                            <p class="mb-0 text-body-secondary">Expansiones internacionales acompa?adas</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="metric-card p-4">
+                            <h3 class="display-6 fw-bold text-primary mb-1">98%</h3>
+                            <p class="mb-0 text-body-secondary">Clientes que renuevan sus proyectos con Nova</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-servicios py-5" id="servicios">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <span class="badge bg-primary-subtle text-primary-emphasis mb-2">Servicios</span>
+                        <h2 class="display-6 fw-bold mb-3">Soluciones a medida para cada etapa de tu negocio</h2>
+                        <p class="text-body-secondary">Dise?amos soluciones integrales que conectan estrategia, personas y tecnolog?a para desbloquear nuevas oportunidades de valor.</p>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <a href="#contacto" class="btn btn-outline-primary">Solicita una propuesta</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon-pill bg-primary-subtle text-primary-emphasis mb-4"><i class="bi bi-lightbulb"></i></div>
+                                <h3 class="h5 fw-semibold mb-3">Estrategia corporativa</h3>
+                                <p class="text-body-secondary mb-4">Definimos hojas de ruta claras para acelerar el crecimiento, priorizando iniciativas con alto retorno y r?pida implementaci?n.</p>
+                                <ul class="list-unstyled d-grid gap-2 mb-0">
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Planes quinquenales y OKRs</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Pivot y nuevos modelos de negocio</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Gobierno y gesti?n del cambio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon-pill bg-primary-subtle text-primary-emphasis mb-4"><i class="bi bi-diagram-3"></i></div>
+                                <h3 class="h5 fw-semibold mb-3">Operaciones inteligentes</h3>
+                                <p class="text-body-secondary mb-4">Optimizamos procesos cr?ticos con anal?tica avanzada, automatizaci?n y redise?o organizacional centrado en resultados.</p>
+                                <ul class="list-unstyled d-grid gap-2 mb-0">
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Diagn?stico operativo 360?</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Automatizaci?n y RPA</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Cadenas de suministro resilientes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon-pill bg-primary-subtle text-primary-emphasis mb-4"><i class="bi bi-globe2"></i></div>
+                                <h3 class="h5 fw-semibold mb-3">Expansi?n internacional</h3>
+                                <p class="text-body-secondary mb-4">Dise?amos estrategias de entrada y consolidaci?n en nuevos mercados, con estudios de mercado y acompa?amiento legal.</p>
+                                <ul class="list-unstyled d-grid gap-2 mb-0">
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Due diligence de mercados</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Modelos financieros locales</li>
+                                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Acompa?amiento regulatorio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-metodologia py-5" id="metodologia">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <span class="badge bg-primary-subtle text-primary-emphasis mb-2">Metodolog?a</span>
+                        <h2 class="display-6 fw-bold mb-3">Un modelo probado para entregar resultados tangibles</h2>
+                        <p class="text-body-secondary mb-4">Integramos an?lisis cuantitativo con trabajo inmersivo junto a tu equipo, asegurando adopci?n y escalabilidad desde el d?a uno.</p>
+                        <a href="#contacto" class="btn btn-primary">Conversemos sobre tu reto</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="timeline">
+                            <div class="timeline-step">
+                                <div class="timeline-number">01</div>
+                                <div>
+                                    <h3 class="h5 mb-1">Diagn?stico inmersivo (2 semanas)</h3>
+                                    <p class="mb-0 text-body-secondary">Workshops colaborativos, revisi?n de datos y entrevistas clave para mapear oportunidades.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-number">02</div>
+                                <div>
+                                    <h3 class="h5 mb-1">Dise?o de hoja de ruta (3 semanas)</h3>
+                                    <p class="mb-0 text-body-secondary">Definici?n de iniciativas priorizadas, business case y KPIs para medir el impacto.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-number">03</div>
+                                <div>
+                                    <h3 class="h5 mb-1">Implementaci?n guiada (6-12 semanas)</h3>
+                                    <p class="mb-0 text-body-secondary">Entrega ?gil con c?lulas mixtas, seguimiento semanal y transferencia de capacidades.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-number">04</div>
+                                <div>
+                                    <h3 class="h5 mb-1">Escalamiento y soporte continuo</h3>
+                                    <p class="mb-0 text-body-secondary">Monitoreo post-implementaci?n, entrenamiento y soporte ejecutivo on-demand.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-casos py-5 bg-body" id="casos">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-7">
+                        <span class="badge bg-primary-subtle text-primary-emphasis mb-2">Casos de ?xito</span>
+                        <h2 class="display-6 fw-bold mb-3">Resultados reales con empresas l?deres</h2>
+                        <p class="text-body-secondary mb-0">Historias que demuestran c?mo impulsamos crecimiento, eficiencia y expansi?n en m?ltiples industrias.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="case-card h-100 p-4 rounded-4 bg-white shadow-sm">
+                            <div class="case-chip">Tecnolog?a B2B</div>
+                            <h3 class="h5 fw-semibold mt-3 mb-3">Escalamiento de startup SaaS a Serie B</h3>
+                            <p class="text-body-secondary">Implementamos estrategia de expansi?n en LatAm, triplicando el pipeline y elevando el MRR en 68%.</p>
+                            <ul class="list-unstyled d-grid gap-2">
+                                <li><i class="bi bi-arrow-up-right-circle me-2 text-primary"></i>Tiempo de venta reducido en 35%</li>
+                                <li><i class="bi bi-arrow-up-right-circle me-2 text-primary"></i>Operaci?n comercial estandarizada en 5 pa?ses</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="case-card h-100 p-4 rounded-4 bg-white shadow-sm">
+                            <div class="case-chip">Manufactura</div>
+                            <h3 class="h5 fw-semibold mt-3 mb-3">Transformaci?n digital en planta regional</h3>
+                            <p class="text-body-secondary">Integramos anal?tica de datos en tiempo real y automatizamos procesos cr?ticos, logrando ahorros significativos.</p>
+                            <ul class="list-unstyled d-grid gap-2">
+                                <li><i class="bi bi-arrow-up-right-circle me-2 text-primary"></i>Reducci?n de costos operativos en 22%</li>
+                                <li><i class="bi bi-arrow-up-right-circle me-2 text-primary"></i>KPIs visibles para toda la organizaci?n</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="case-card h-100 p-4 rounded-4 bg-white shadow-sm">
+                            <div class="case-chip">Servicios financieros</div>
+                            <h3 class="h5 fw-semibold mt-3 mb-3">Lanzamiento de banca digital</h3>
+                            <p class="text-body-secondary">Acompa?amos la creaci?n de una nueva unidad fintech, desde el dise?o del producto hasta la puesta en marcha.</p>
+                            <ul class="list-unstyled d-grid gap-2">
+                                <li><i class="bi bi-arrow-up-right-circle me-2 text-primary"></i>400K usuarios en los primeros 9 meses</li>
+                                <li><i class="bi bi-arrow-up-right-circle me-2 text-primary"></i>Certificaciones regulatorias sin retrasos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-equipo py-5" id="equipo">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-7">
+                        <span class="badge bg-primary-subtle text-primary-emphasis mb-2">Equipo</span>
+                        <h2 class="display-6 fw-bold mb-3">Consultores senior con visi?n global</h2>
+                        <p class="text-body-secondary mb-0">M?s de 20 expertos con experiencia l?der en consultoras top-tier y corporaciones multinacionales.</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end">
+                        <a href="#contacto" class="btn btn-outline-primary">Conoce a nuestros especialistas</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="team-card p-4 text-center h-100 rounded-4">
+                            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3" alt="CEO" loading="lazy">
+                            <h3 class="h5 mb-1">Valeria Dom?nguez</h3>
+                            <p class="text-primary fw-semibold mb-2">CEO &amp; Estrategia</p>
+                            <p class="text-body-secondary mb-0">M?s de 15 a?os liderando transformaciones en LATAM y Europa para Fortune 500.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-card p-4 text-center h-100 rounded-4">
+                            <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3" alt="COO" loading="lazy">
+                            <h3 class="h5 mb-1">Gabriel Ortega</h3>
+                            <p class="text-primary fw-semibold mb-2">COO &amp; Operaciones</p>
+                            <p class="text-body-secondary mb-0">Especialista en excelencia operacional, ha liderado programas de mejora en 4 continentes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-card p-4 text-center h-100 rounded-4">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3" alt="CTO" loading="lazy">
+                            <h3 class="h5 mb-1">Marcela R?os</h3>
+                            <p class="text-primary fw-semibold mb-2">CTO &amp; Innovaci?n</p>
+                            <p class="text-body-secondary mb-0">Arquitecta de soluciones digitales que impulsan la adopci?n de tecnolog?a en grandes corporaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-testimonios py-5 bg-body">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <span class="badge bg-primary-subtle text-primary-emphasis mb-2">Testimonios</span>
+                        <h2 class="display-6 fw-bold mb-3">Lo que dicen quienes trabajan con nosotros</h2>
+                        <p class="text-body-secondary mb-0">Relaciones de largo plazo basadas en confianza, impacto y transparencia.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
+                            <p class="mb-4">?Nova nos ayud? a reconectar nuestra estrategia con el mercado. En menos de seis meses, vimos un aumento del 45% en nuestros ingresos recurrentes.?</p>
+                            <div>
+                                <h3 class="h6 mb-1">Laura M?ndez</h3>
+                                <p class="text-body-secondary mb-0">Directora Comercial, Horizon SaaS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
+                            <p class="mb-4">?Su enfoque colaborativo y basado en datos permiti? alinear equipos en tres pa?ses. Hoy tenemos procesos resilientes y visibilidad total.?</p>
+                            <div>
+                                <h3 class="h6 mb-1">Rodrigo Pati?o</h3>
+                                <p class="text-body-secondary mb-0">COO, Altamar Industries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial-card p-4 bg-white rounded-4 shadow-sm h-100">
+                            <p class="mb-4">?Desde la definici?n de la estrategia hasta la ejecuci?n, Nova fue un socio clave. Lanzamos nuestra banca digital en tiempo r?cord.?</p>
+                            <div>
+                                <h3 class="h6 mb-1">Natalia Cruz</h3>
+                                <p class="text-body-secondary mb-0">VP Innovaci?n, Finex Bank</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contacto py-5" id="contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <span class="badge bg-primary-subtle text-primary-emphasis mb-2">Contacto</span>
+                        <h2 class="display-6 fw-bold mb-3">Agenda una sesi?n de descubrimiento</h2>
+                        <p class="text-body-secondary mb-4">Cu?ntanos sobre tu reto y armaremos juntos un roadmap con quick wins y objetivos a medio plazo.</p>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-envelope text-primary me-3 fs-4"></i>
+                                <div>
+                                    <h3 class="h6 mb-1">Escr?benos</h3>
+                                    <p class="mb-0">hola@novaconsultores.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-geo-alt text-primary me-3 fs-4"></i>
+                                <div>
+                                    <h3 class="h6 mb-1">Oficinas</h3>
+                                    <p class="mb-0">M?xico | Madrid | Bogot?</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-calendar-event text-primary me-3 fs-4"></i>
+                                <div>
+                                    <h3 class="h6 mb-1">Disponibilidad</h3>
+                                    <p class="mb-0">Respuestas en menos de 24 horas h?biles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contact-card p-4 p-lg-5 bg-white rounded-4 shadow-lg">
+                            <h3 class="h4 fw-semibold mb-4">Cu?ntanos sobre tu proyecto</h3>
+                            <form action="mailto:hola@novaconsultores.com" method="post" enctype="text/plain" class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="empresa" class="form-label">Empresa</label>
+                                    <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Nombre de la empresa" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo electr?nico</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="nombre@empresa.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Tel?fono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+52 55 0000 0000">
+                                </div>
+                                <div class="col-12">
+                                    <label for="servicio" class="form-label">Inter?s principal</label>
+                                    <select class="form-select" id="servicio" name="servicio" required>
+                                        <option value="" selected disabled>Selecciona una opci?n</option>
+                                        <option value="estrategia">Estrategia corporativa</option>
+                                        <option value="operaciones">Optimizaci?n operativa</option>
+                                        <option value="expansion">Expansi?n internacional</option>
+                                        <option value="transformacion">Transformaci?n digital</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="?Qu? te gustar?a lograr en los pr?ximos 12 meses?" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="privacy" required>
+                                        <label class="form-check-label" for="privacy">
+                                            Acepto el tratamiento de mis datos conforme al aviso de privacidad.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-grid d-sm-flex justify-content-sm-end gap-3">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    <a href="tel:+525512345678" class="btn btn-outline-primary btn-lg">Ll?manos</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-md-6">
+                    <h3 class="h5 mb-3">Nova Consultores</h3>
+                    <p class="mb-0 text-white-50">Impulsamos organizaciones ambiciosas con estrategia, tecnolog?a y talento. ? {{ now().year }} Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="mailto:hola@novaconsultores.com" class="text-white-50 me-3">hola@novaconsultores.com</a>
+                    <a href="https://www.linkedin.com" class="text-white-50 me-3" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="#inicio" class="btn btn-outline-light btn-sm">Volver arriba</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
