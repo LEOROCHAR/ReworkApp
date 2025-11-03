@@ -215,5 +215,10 @@ def eliminar_usuario(usuario):
         escribir_json(USUARIOS_FILE, usuarios)
     return redirect(url_for('usuarios_autorizados'))
 
+
+@app.route('/landing')
+def landing():
+    return render_template('landing.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
